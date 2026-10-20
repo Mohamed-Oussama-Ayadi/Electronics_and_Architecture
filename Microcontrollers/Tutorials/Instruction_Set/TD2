@@ -1,0 +1,7 @@
+;;;;;;;;;;;;;;Debut;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+LIST p=16F84           ;;;;;;definition de processeur
+#include <p16F84.inc> ;;;;;;;definition des variables
+
+
+
+END

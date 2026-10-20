@@ -1,0 +1,15 @@
+Message[301] C:\PROGRAM FILES (X86)\MICROCHIP\MPASM SUITE\P16F84.INC 37 : MESSAGE: (Processor-header file mismatch.  Verify selected processor.)
+Warning[205] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 9 : Found directive in column 1. (ORG)
+Warning[203] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 13 : Found opcode in column 1. (BSF)
+Warning[203] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 14 : Found opcode in column 1. (BSF)
+Message[302] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 14 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 15 : Found opcode in column 1. (CLRF)
+Message[302] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 15 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[203] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 20 : Found opcode in column 1. (BCF)
+Warning[203] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 21 : Found opcode in column 1. (CLRF)
+Warning[203] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 26 : Found opcode in column 1. (BTFSS)
+Warning[203] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 31 : Found opcode in column 1. (MOVLW)
+Warning[203] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 32 : Found opcode in column 1. (MOVLW)
+Warning[203] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 33 : Found opcode in column 1. (GOTO)
+Warning[203] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 38 : Found opcode in column 1. (MOVWF)
+Warning[205] C:\USERS\21626\DESKTOP\2A\MICROCONTROLEUR\EX\EX0.ASM 43 : Found directive in column 1. (END)

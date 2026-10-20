@@ -1,0 +1,46 @@
+	LIST      p=16F84            ; Définition de processeur
+	#include <p16F84.inc>        ; Définitions de variables
+
+	__CONFIG   _CP_ON & _WDT_OFF & _PWRTE_ON & _HS_OSC
+
+
+org 0x0005
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;configuration;;;;;;;;;;;;;;;;
+BSF status,rp0 ; je suis dans le bank 1
+bcf trisb,0     ;la pin configuré comme sortie
+bcf trisb,1     ;la pin configuré comme sortie
+bcf trisb,2     ;la pin configuré comme sortie
+bcf trisb,3     ;la pin configuré comme sortie
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;initialisation uniquement les sorties
+BCF status,rp0 ;je suis dans le bank 0
+bcf portb,0 ; la led connecté à la pin RB0est éteinte
+bcf portb,1; la led connecté à la pin RB1 est éteinte
+bcf portb,2 ; la led connecté à la pin RB2 est éteinte
+bcf portb,3 ; la led connecté à la pin RB3 est éteinte
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;programme principal;;;;;;;;;;;;
+test ;etiquette
+BTFSS porta,3 ;tester est sauter une ligne lorsque  RA3==1
+goto OFF;faux ==> (RA3==0)
+goto ON ; vrai ==> (RA3==1)
+
+OFF 
+BSF portb,0 ;la led est connectée à la pin RB0 est allumée
+BSF portb,2 ;la led est connectée à la pin RB2 est allumée
+BCF portb,1 ;la led est connectée à la pin RB1 est éteinte
+BCF portb,3 ;la led est connectée à la pin RB3 est éteinte
+goto test ; aller vers l'étiquette test
+ON 
+BSF portb,0 ;la led est connectée à la pin RB0 est éteinte
+BSF portb,2 ;la led est connectée à la pin RB2 est éteinte
+BCF portb,1 ;la led est connectée à la pin RB1 est allumée
+BCF portb,3 ;la led est connectée à la pin RB3 est allumée
+goto test ; aller vers l'étiquette test
+;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;Fin
+
+END
